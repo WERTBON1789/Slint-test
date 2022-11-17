@@ -1,0 +1,22 @@
+[package]
+name = "slint_test"
+version = "1.0.0"
+build = "build.rs"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+slint = { version = "0.3.1", features = ["backend-winit", "compat-0-3-0", "renderer-winit-femtovg", "std"], default-features = false }
+rand = "0.8.5"
+
+[build-dependencies]
+slint-build = "0.3.1"
+
+
+[profile.release]
+lto = true
+opt-level = "z"
+strip = true
+panic = "abort"
+codegen-units = 1
