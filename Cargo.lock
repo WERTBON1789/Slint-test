@@ -526,6 +526,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "counter-ui"
+version = "0.1.0"
+dependencies = [
+ "slint",
+ "slint-build",
+]
+
+[[package]]
 name = "countme"
 version = "3.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -2,6 +2,7 @@
 
 members = [
     "random_color_grid",
+    "counter-ui"
 ]
 
 [profile.release]

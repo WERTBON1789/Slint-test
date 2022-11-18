@@ -1,0 +1,38 @@
+import { Button } from "std-widgets.slint";
+
+export global Label := {
+    property <string> label;
+}
+
+Counter := Window {
+
+    height: 400px;
+    width: 300px;
+
+    callback inc;
+    callback dec;
+
+    VerticalLayout {
+        inc := Button {
+            text: "Increase";
+            clicked => {
+                root.inc();
+            }
+        }
+
+        Text {
+            text: Label.label;
+            x: root.width/2-self.width/2;
+            vertical-alignment: center;
+            horizontal-alignment: center;
+            font-size: 20px;
+        }
+
+        dec := Button {
+            text: "Decrease";
+            clicked => {
+                root.dec();
+            }
+        }
+    }
+}
