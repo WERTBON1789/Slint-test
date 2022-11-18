@@ -2184,6 +2184,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "random_color_grid"
+version = "1.0.0"
+dependencies = [
+ "rand",
+ "slint",
+ "slint-build",
+]
+
+[[package]]
 name = "raw-window-handle"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2584,15 +2593,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "spin_on",
-]
-
-[[package]]
-name = "slint_test"
-version = "1.0.0"
-dependencies = [
- "rand",
- "slint",
- "slint-build",
 ]
 
 [[package]]

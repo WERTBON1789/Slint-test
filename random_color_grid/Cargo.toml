@@ -1,5 +1,5 @@
 [package]
-name = "slint_test"
+name = "random_color_grid"
 version = "1.0.0"
 build = "build.rs"
 edition = "2021"
