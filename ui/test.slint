@@ -6,7 +6,6 @@ export global Colors := {
 }
 
 Test := Window {
-
     width: 400px;
     height: 400px;
 
@@ -20,32 +19,39 @@ Test := Window {
                 Rectangle {
                     background: Colors.background1;
                 }
+
                 clicked => {
                     root.change-color();
                 }
             }
+
             TouchArea {
                 Rectangle {
                     background: Colors.background2;
                 }
+
                 clicked => {
                     root.change-color();
                 }
             }
         }
+
         HorizontalLayout {
             TouchArea {
                 Rectangle {
                     background: Colors.background3;
                 }
+
                 clicked => {
                     root.change-color();
                 }
             }
+
             TouchArea {
                 Rectangle {
                     background: Colors.background4;
                 }
+
                 clicked => {
                     root.change-color();
                 }
@@ -65,14 +71,11 @@ Test := Window {
                 text: "Klick mich!";
                 font-size: 30px;
                 color: white;
-    
                 width: 150px;
                 height: 60px;
                 y: root.height/2-self.height/2;
                 x: root.width/2-self.width/2;
             }
         }
-        
-        
     }
 }
