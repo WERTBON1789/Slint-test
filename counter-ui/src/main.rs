@@ -18,6 +18,8 @@ fn main() {
 
     let dec_weak = counter.as_weak();
 
+    counter.global::<Label>().set_label(slint::SharedString::from(format!("{}", counter_num.get())));
+
     counter.on_inc(move || {
         counter_num.set(counter_num.get()+1);
         inc_weak.unwrap().global::<Label>().set_label(slint::SharedString::from(format!("{}", counter_num.get())));
